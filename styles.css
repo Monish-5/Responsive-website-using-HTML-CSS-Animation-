@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+body{
+    width:100%;
+    min-height: 100vh;
+    background-color:whitesmoke;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color :aqua;
+    z-index: -4;
+
+}
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    
+}
+.main{
+        width :100%;
+        margin-top:8%;
+        margin-left:8%;
+        
+    }
+.content{
+        width:80%;
+        margin-top:8%;
+        margin-left:8%;
+        
+        color:cadetblue;
+        overflow: hidden;
+        z-index: -2;
+    }
+.content h1{
+        font-size:80px;
+        margin-bottom: 1%;
+        letter-spacing: 8px;
+
+    }
+.content h3{
+        font-size: 25px;
+        margin-bottom: 3%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+span{
+        color: rgb(red, green, blue);
+    }
+.content p{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    padding :15px 30px;
+    background: transparent;
+    color:burlywood;
+
+}
+button:hover{
+    background: rebeccapurple;
+}
+.image{
+     width: 100%;
+     margin-top: 0%;
+     z-index: -20;
+}
+img{
+    width: 40rem;
+    animation: car 5s ease-in-out;
+    
+}
+@keyframes car{
+    0%{
+        transform: translateX(100%);
+    }
+}
+@media screen and (max-width:570px) {
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+.image{
+    width: 100%;
+    position: absolute;
+    bottom: -15%;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 40rem;
+}
+}
